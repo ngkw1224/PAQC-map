@@ -37,3 +37,6 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+var firebase = new Firebase("https://jsse-paqc-default-rtdb.asia-southeast1.firebasedatabase.app/");
+
