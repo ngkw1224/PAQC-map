@@ -1,7 +1,7 @@
 // Initialize and add the map
 function initMap() {
   // The location of HK
-  const HK = { lat: 22.3193, lng: 114.1694 };
+  const HK = { lat: 22.3193, lng: -114.1694 };
   // The map, centered at HK
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
