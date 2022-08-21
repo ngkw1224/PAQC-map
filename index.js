@@ -7,6 +7,27 @@ function initMap() {
     zoom: 22,
     center: hongkong,
   });
+  
+  const iconBase =
+    "./";
+  const icons = {
+    low: {
+      icon: iconBase + "low.png",
+    },
+    moderate: {
+      icon: iconBase + "moderate.png",
+    },
+    high: {
+      icon: iconBase + "high.png",
+    },
+    veryhigh: {
+      icon: iconBase + "veryhigh.png",
+    },
+    serious: {
+      icon: iconBase + "veryhigh.png",
+    },
+  };
+
   // The marker, positioned at Hong Kong
   const marker = new google.maps.Marker({
     position: hongkong,
