@@ -46,7 +46,7 @@ snapshot.forEach(function(childSnapshot) {
   const marker = new google.maps.Marker({
     position: hongkong,
     map: map,
-    icon: icons["serious"].icon,
+    icon: icons["veryhigh"].icon,
   });
 }
 
