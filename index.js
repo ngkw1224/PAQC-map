@@ -32,6 +32,7 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: hongkong,
     map: map,
+    type: "low",
   });
 }
 
