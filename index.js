@@ -24,7 +24,7 @@ function initMap() {
       icon: iconBase + "veryhigh.png",
     },
     serious: {
-      icon: iconBase + "veryhigh.png",
+      icon: iconBase + "serious.png",
     },
   };
 
@@ -32,7 +32,7 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: hongkong,
     map: map,
-    type: level3faggot + ".png",
+    type: "serious",
   });
 }
 
