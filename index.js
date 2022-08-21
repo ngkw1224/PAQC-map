@@ -7,7 +7,7 @@ function initMap() {
     zoom: 4,
     center: hongkong,
   });
-  // The marker, positioned at Uluru
+  // The marker, positioned at Hong Kong
   const marker = new google.maps.Marker({
     position: hongkong,
     map: map,
