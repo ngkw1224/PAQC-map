@@ -8,6 +8,20 @@ function initMap() {
     center: hongkong,
   });
   
+  
+var firebase = new Firebase("https://jsse-paqc-aa144.firebaseio.com/");
+
+var ref = firebase.database().ref("firebasetest");
+
+ref.on("value", function(snapshot) {
+snapshot.forEach(function(childSnapshot) {
+ var childData = childSnapshot.val();
+ var level1faggot = childData.level1faggot;
+ var level2faggot = childData.level2faggot;
+ var level3faggot = childData.level3faggot;
+});
+});
+  
   const iconBase =
     "./";
   const icons = {
@@ -38,15 +52,3 @@ function initMap() {
 
 window.initMap = initMap;
 
-var firebase = new Firebase("https://jsse-paqc-aa144.firebaseio.com/");
-
-var ref = firebase.database().ref("firebasetest");
-
-ref.on("value", function(snapshot) {
-snapshot.forEach(function(childSnapshot) {
- var childData = childSnapshot.val();
- var level1faggot = childData.level1faggot;
- var level2faggot = childData.level2faggot;
- var level3faggot = childData.level3faggot;
-});
-});
