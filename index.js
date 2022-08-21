@@ -4,7 +4,7 @@ function initMap() {
   const hongkong = { lat: 22.3193, lng: 114.1694 };
   // The map, centered at hongkong
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 22,
+    zoom: 16,
     center: hongkong,
   });
   
